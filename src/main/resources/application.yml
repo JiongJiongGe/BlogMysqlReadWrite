@@ -1,0 +1,20 @@
+druid:
+    type: com.alibaba.druid.pool.DruidDataSource
+    master:
+        url: jdbc:mysql://127.0.0.1:3306/mybatis?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=true
+        driver-class-name: com.mysql.jdbc.Driver
+        username: root
+        password: yunkai
+        initial-size: 5
+        min-idle: 1
+        max-active: 100
+        test-on-borrow: true
+    slave:
+        url: jdbc:mysql://127.0.0.1:3307/mybatis?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=true
+        driver-class-name: com.mysql.jdbc.Driver
+        username: root
+        password: yunkai
+        initial-size: 5
+        min-idle: 1
+        max-active: 100
+        test-on-borrow: true
